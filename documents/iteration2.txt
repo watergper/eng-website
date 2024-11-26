@@ -1,0 +1,53 @@
+@startuml iteration2
+'we need a timer,a map and building'
+' class Timer{
+'     float current_time
+
+'     float display_time()
+' }
+class Building{
+    int width
+    int height
+    select_building()
+    place_building()
+}
+
+class BuildingManager{
+    Building current_building
+    boolean is_selected
+
+    private boolean is_colliding()
+    void draw()
+}
+class Map{
+    int width
+    int height
+    Grid grid
+}
+class BuildingMenu{
+    private int[] buildingCounts
+    private Array<Label> countLabels
+
+    display_count()
+}
+class Grid{
+    int rows; 
+    int cols; 
+    Color gridColor; 
+    float cellSize;
+
+    draw()
+    update()
+}
+
+
+
+Building <--Accom
+Building <--FoodZone
+Building <--Learning
+Building o-- BuildingManager : manages
+BuildingMenu ..> Building : depends on
+Building <-- Recreation
+
+
+@enduml

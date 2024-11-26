@@ -1,0 +1,41 @@
+@startuml iteration1
+'we need a timer,a map and building'
+
+class Timer{
+    float current_time
+    float MAX_TIME
+
+    float display_time()
+    boolean is_Max_Time_reached()
+}
+class Building{
+    int width
+    int height
+    select_building()
+    place_building()
+}
+Building <--Learning
+Building <-- Accommodation
+Building <--FoodZone
+Building <-- Recreation
+
+class Map{
+    int width
+    int height
+    Grid grid
+}
+class GameScreen{
+    void show()
+    void pause()
+}
+class StartScreen{
+    Stage stage
+    Button StartButton
+
+    void pause()
+    void resume()
+}
+
+
+
+@enduml
