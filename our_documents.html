@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Hassan Yunus"> 
+    <title>About Us</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <div id="navbar"></div>
+    <main>
+        <!-- Note: change the pdf files to github links so that you dont have to manually update the document files-->
+        <h1>Our Documents</h1>
+        <p>We have plenty of documents for you to have gander at. So why don't you have a look</p>
+        
+        <section class="document-section">
+            <div class="document-item">
+              <h3>Requirements</h3>
+              <p><a href="documents/Requirements.pdf">Req1</a></p>
+              <p><a href="documents/Req2.pdf">Req2</a></p>
+            </div>
+      
+            <div class="document-item">
+              <h3>Risk Assessment</h3>
+              <p><a href="documents/Risk Assessment.pdf">Risk1</a></p>
+              <p><a href="documents/Risk2.pdf">Risk2</a></p>
+            </div>
+      
+            <div class="document-item">
+              <h3>Architecture</h3>
+              <p><a href="documents/Architecture.pdf">Arch1</a></p>
+              <p><a href="documents/CRC Cards.pdf">CRC Cards</a></p>
+              <p><a href="documents/iteration1.txt">Plant UML Iteration 1</a></p>
+              <p><a href="documents/iteration2.txt">Plant UML Iteration 2</a></p>
+              <p><a href="documents/Final UML Class Diagram.pdf">Final UML Class Diagram</a></p>
+            </div>
+      
+            <div class="document-item">
+                <h3>Architecture 2</h3>
+                <p><a href="documents/Arch2.pdf">Arch2</a></p>
+              </div>
+      
+            <div class="document-item">
+              <h3>Methods & Planning</h3>
+              <p><a href="documents/Methods & Planning.pdf">Plan1</a></p>
+              <p><a href="documents/Plan2.pdf">Plan2</a></p>
+            </div>
+      
+            <div class="document-item">
+              <h3>Implementation</h3>
+              <p><a href="documents/Implementation.pdf">Impl1</a></p>
+              <p><a href="documents/Impl2.pdf">Impl2</a></p>
+            </div>
+            
+            <div class="document-item">
+                <h3>Changes</h3>
+                <p><a href="documents/Change2.pdf">Change2</a></p>
+              </div>
+
+            <div class="document-item">
+                <h3>Continuous Integration 2</h3>
+                <p><a href="documents/CI2.pdf">CI2</a></p>
+            </div>
+
+            <div class="document-item">
+                <h3>User Evaluation Report 2</h3>
+                <p><a href="documents/Eval2.pdf">Eval2</a></p>
+            </div>
+
+            <div class="document-item">
+                <h3>Testing</h3>
+                <p><a href="documents/Test2.pdf">Test2</a></p>
+            </div>
+
+            <div class="document-item">
+              <h3>JAR Executable</h3>
+              <p><a href="documents/UniSim2-1.0.0.jar">UniSim2.jar</a></p>
+            </div>
+          </section>
+    </main>    
+    <script>
+        fetch('navbar.html')
+          .then(response => response.text())
+          .then(data => document.getElementById('navbar').innerHTML = data);
+    </script>
+</body>
